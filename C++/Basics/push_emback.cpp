@@ -21,6 +21,7 @@ struct Person{
      //转移构造函数
      Person(Person&& other): name(move(other.name)), age(other.age)
     {
+     
          cout << "I have been moved"<<endl;
     }
 
